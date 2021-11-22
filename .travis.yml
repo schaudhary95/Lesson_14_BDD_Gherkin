@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.8"
+  - "nightly"
+# command to install dependencies
+install:
+  - "pip install pytest"
+  - "pip install -r requirements.txt"
+  - "pip install requests"
+  - "pip install pytest-bdd"
+
+# command to run tests
+script:
+  - pytest
